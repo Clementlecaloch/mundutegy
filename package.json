@@ -19,6 +19,7 @@
     "graphql": "^15.0.0",
     "lightbox2": "^2.11.1",
     "nuxt": "^2.0.0",
+    "strapi-sdk-javascript": "^0.3.3",
     "vue": "^2.6.11",
     "vue-picture-swipe": "^1.2.0"
   },
