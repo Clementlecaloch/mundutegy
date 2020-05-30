@@ -1,6 +1,6 @@
 <template>
   <div class="container part oneArticle">
-    <img :src="'http://localhost:1337' + article.imagePresentation.url" alt="" class="float-right image-oneArticle image">
+    <img :src="'https://afternoon-river-68648.herokuapp.com' + article.imagePresentation.url" alt="" class="float-right image-oneArticle image">
     <div class="flex-column">
       <div class="margin-10">
         <h2>{{article.titre}}</h2>

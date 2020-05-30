@@ -7,7 +7,7 @@
         <h1>{{continent.nom}}</h1>
         <div class="row nom-pays align-items-center" v-for="pays in continent.pays" v-bind:key="continent.pays.id">
           <div class="col-lg-2">
-            <img class="drapeau" :src="'http://localhost:1337' + pays.drapeau.url" alt="">
+            <img class="drapeau" :src="'https://afternoon-river-68648.herokuapp.com' + pays.drapeau.url" alt="">
           </div>
           <h2 class="col-lg-5">{{pays.Nom}}</h2>
           <router-link class="button" :to="{ name: 'pays-id', params: { id: pays.id }}" tag="a">En savoir plus</router-link>
