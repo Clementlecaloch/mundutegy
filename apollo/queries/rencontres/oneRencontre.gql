@@ -1,0 +1,15 @@
+query oneRencontre($id: ID!) {
+  rencontre(id: $id) {
+    id
+    nom
+    texte
+    photo {
+      id
+    	url
+    }
+    pays {
+      id
+    	Nom
+    }
+  }
+}

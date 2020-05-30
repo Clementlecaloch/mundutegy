@@ -1,0 +1,15 @@
+query listePays {
+  continents {
+    id
+    nom
+    pays {
+      id
+      Nom
+      drapeau {
+        id
+      	url
+      }
+    }
+  }
+}
+

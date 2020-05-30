@@ -1,0 +1,15 @@
+query allRencontres {
+  rencontres {
+    id
+    nom
+    texte
+    photo {
+      id
+    	url
+    }
+    pays {
+        id
+        Nom
+     }
+  }
+}

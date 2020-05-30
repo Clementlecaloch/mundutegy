@@ -1,0 +1,14 @@
+query oneArticle($id: ID!) {
+  article(id: $id) {
+    id
+    titre
+    contenu
+    dateDePublication
+    imagePresentation {
+      url
+    }
+    pays {
+      Nom
+     }
+  }
+}

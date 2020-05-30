@@ -1,0 +1,12 @@
+query oneRecette($id: ID!) {
+  recette(id: $id) {
+    id
+    titre
+    recette
+    videoLien
+    pays {
+      Nom
+    }
+  }
+}
+

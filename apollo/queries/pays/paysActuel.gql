@@ -1,0 +1,13 @@
+query paysActuel {
+    pays(where: {
+    actuel: true,
+  }) {
+      id
+      Nom
+      drapeau {
+        id
+      	url
+      }
+      actuel
+    }
+  }

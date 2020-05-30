@@ -1,0 +1,15 @@
+query allBook{
+	livres {
+    id
+    titre
+    couverture {
+      id
+      url
+    }
+    prix
+    resume
+    lien
+  }
+}
+
+

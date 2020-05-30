@@ -1,0 +1,14 @@
+query allArticles{
+  articles{
+    id
+    titre
+    contenu
+    dateDePublication
+    imagePresentation {
+      url
+    }
+    pays {
+      Nom
+    }
+  }
+}

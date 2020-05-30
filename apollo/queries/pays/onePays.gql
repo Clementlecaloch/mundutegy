@@ -1,0 +1,41 @@
+query onePays($id: ID!) {
+   pay(id: $id) {
+     id
+     Nom
+     carte
+     articles {
+       id
+       titre
+       imagePresentation {
+         url
+       }
+       contenu
+     }
+     recettes {
+       id
+       titre
+       recette
+       photo {
+          url
+       }
+     }
+     rencontres {
+       id
+       nom
+       texte
+       photo {
+         id
+         url
+       }
+     }
+     galerie {
+       id
+       photos {
+         id
+         url
+       }
+     }
+   }
+ }
+
+

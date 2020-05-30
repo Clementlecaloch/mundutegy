@@ -1,0 +1,13 @@
+query allRecettes {
+  recettes {
+    id
+    titre
+    recette
+    photo {
+      url
+    }
+    pays {
+      Nom
+    }
+  }
+}

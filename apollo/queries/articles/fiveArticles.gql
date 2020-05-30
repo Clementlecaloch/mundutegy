@@ -1,0 +1,14 @@
+query fiveArticles{
+  articles(
+    sort: "dateDePublication:desc"
+    limit: 4
+  ){
+    id
+    titre
+    contenu
+    dateDePublication
+    imagePresentation {
+      url
+    }
+  }
+}
