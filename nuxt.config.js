@@ -54,7 +54,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://localhost:1337/graphql'
+        httpEndpoint: 'https://afternoon-river-68648.herokuapp.com/graphql'
       }
     }
   },
