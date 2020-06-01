@@ -285,7 +285,9 @@ iframe {
   }
 }
 
-@media screen and (min-width: 800px) {
+
+
+@media screen and (min-width: 1024px) {
   .fourArticles, .allArticles{
     display: grid;
     width: 90%;
@@ -297,11 +299,5 @@ iframe {
 
   .allArticles {
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .fourArticles, .allArticles {
-    width: 70%;
   }
 }
