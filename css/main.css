@@ -285,10 +285,10 @@ iframe {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 800px) {
   .fourArticles, .allArticles{
     display: grid;
-    width: 70%;
+    width: 90%;
     margin: auto;
     grid-template-columns: 48% 48%;
     grid-column-gap: 4%;
@@ -297,5 +297,11 @@ iframe {
 
   .allArticles {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .fourArticles, .allArticles {
+    width: 70%;
   }
 }
