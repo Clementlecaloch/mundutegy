@@ -21,7 +21,7 @@
         </div>
       </div>
         <p class="text-center"><a href="mailto:natgil.mundutegy@gmail.com">Nous contacter sur : natgil.mundutegy@gmail.com</a></p>
-        <p class="text-center">Par Clément Le Caloch</p>
+        <p class="text-center"><a href="https://clementlecaloch.now.sh">Par Clément Le Caloch</a></p>
     </footer>
 </template>
 

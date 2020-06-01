@@ -13,7 +13,7 @@
       </nav>
       <div class="carte">
         <div class="container">
-          <h1>NAT & GIL : GLOBE CROQUEURS<br> MUNDUTEGY</h1>
+          <h1>NAT & GIL - GLOBE CROQUEURS<br> MUNDUTEGY</h1>
           <legend>700 jours</legend>
         </div>
       </div>

@@ -2,7 +2,7 @@
     <div>
       <div class="row actual align-items-center" v-for="pays in filteredList" v-bind:key="pays.id">
         <div class="col-lg-2">
-          <img class="drapeau margin-10" :src="'http://localhost:1337' + pays.drapeau.url" alt="">
+          <img class="drapeau margin-10" :src="'https://afternoon-river-68648.herokuapp.com' + pays.drapeau.url" alt="">
         </div>
         <h2 class="col-lg-5">En ce moment <br> {{pays.Nom}}</h2>
         <router-link class="button" :to="{ name: 'pays-id', params: { id: pays.id }}" tag="a">En savoir plus</router-link>

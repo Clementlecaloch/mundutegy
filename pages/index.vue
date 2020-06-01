@@ -46,7 +46,7 @@
           <router-link to="/rencontres" class="link">
             <img class="icon" src="~/assets/image/icon-hand.png" alt="">
             <h3>RENCONTRES</h3>
-            <p class="text-center">"Et puis il y a ceux que l’on croise que l’on connaît à peine, qui vous disent un mot, une phrases, vous accordent une minutes, une demi heures, et changent le cours de votre vie.” Victore Hugo </p>
+            <p class="text-center">"Et puis il y a ceux que l’on croise que l’on connaît à peine, qui vous disent un mot, une phrases, vous accordent une minutes, une demi heures, et changent le cours de votre vie.” Victor Hugo </p>
           </router-link>
         </div>
         <div class="col-sm icon-nav">
