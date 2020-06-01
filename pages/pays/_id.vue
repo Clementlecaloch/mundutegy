@@ -71,41 +71,5 @@
 </script>
 
 <style>
-  .gallery {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
-    column-count: 3;
-  }
-  .gallery .pics {
-    -webkit-transition: all 350ms ease;
-    transition: all 350ms ease;
-    overflow: hidden
-  }
 
-  .gallery .pics img {
-    transition: all 350ms ease;
-  }
-
-  .gallery .pics:hover img{
-    transform: scale(1.1);
-  }
-  .gallery .animation {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); }
-
-  @media (max-width: 450px) {
-    .gallery {
-      -webkit-column-count: 1;
-      -moz-column-count: 1;
-      column-count: 1;
-    }
-  }
-
-  @media (max-width: 400px) {
-    .btn.filter {
-      padding-left: 1.1rem;
-      padding-right: 1.1rem;
-    }
-  }
 </style>
