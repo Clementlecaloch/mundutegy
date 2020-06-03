@@ -3,7 +3,7 @@
     <h1>Nos livres</h1>
     <div class="livre d-lg-flex flex-row align-items-center justify-content-around" v-for="livres in filteredList" v-bind="livres.id">
       <div class="col-xl-3">
-        <img :src="'https://afternoon-river-68648.herokuapp.com' + livres.couverture.url" alt="">
+        <img :src="livres.couverture.url" alt="">
       </div>
       <div class="col-xl-6 flex-column">
         <h3 class="text-uppercase">{{livres.titre}}</h3>

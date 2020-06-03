@@ -1,6 +1,6 @@
 <template>
   <div class="container part oneArticle">
-    <img :src="'https://afternoon-river-68648.herokuapp.com' + article.imagePresentation.url" alt="" class="float-right image-oneArticle image">
+    <img :src="article.imagePresentation.url" alt="" class="float-right image-oneArticle image">
     <div class="flex-column">
       <div class="margin-10">
         <h2>{{article.titre}}</h2>
@@ -11,7 +11,7 @@
       <section class="text-justify" v-html="$md.render(article.contenu)"></section>
       <div v-if="article.galerie" class="gallery" id="gallery">
         <div class="mb-3 pics animation all 2" v-for="image in article.galerie.photos">
-          <a class="img-fluid" :href="'https://afternoon-river-68648.herokuapp.com' + image.url" data-lightbox="galerie"><img class="image-galerie" :src="'https://afternoon-river-68648.herokuapp.com' + image.url" alt=""></a>
+          <a class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="'https://afternoon-river-68648.herokuapp.com' + image.url" alt=""></a>
         </div>
       </div>
     </div>

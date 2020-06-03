@@ -5,13 +5,13 @@
     <h1 class="margin-10">Les photos</h1>
     <div class="gallery" id="gallery">
       <div class="mb-3 pics animation all 2" v-for="image in pay.galerie.photos">
-        <a class="img-fluid" :href="'https://afternoon-river-68648.herokuapp.com' + image.url" data-lightbox="galerie"><img class="image-galerie" :src="'https://afternoon-river-68648.herokuapp.com' + image.url" alt=""></a>
+        <a class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="'https://afternoon-river-68648.herokuapp.com' + image.url" alt=""></a>
       </div>
     </div>
     <h1 class="text-center margin-10">Recettes</h1>
     <div class="pays-recettes row justify-content-around">
       <div class="col-lg-4 text-center hover-effect padding-20" v-for="recette in pay.recettes">
-        <img class="round-img" :src="'https://afternoon-river-68648.herokuapp.com' + recette.photo.url" alt="">
+        <img class="round-img" :src="recette.photo.url" alt="">
         <h3>{{recette.titre}}</h3>
         <section class="text-justify" v-html="$md.render(recette.recette)"></section>
         <div class="margin-20">
@@ -22,7 +22,7 @@
     <h1 class="text-center margin-10">Rencontres</h1>
     <div class="pays-rencontre row justify-content-around">
       <div class="col-lg-4 text-center hover-effect padding-20" v-for="rencontre in pay.rencontres">
-        <img class="round-img" :src="'https://afternoon-river-68648.herokuapp.com' + rencontre.photo.url" alt="">
+        <img class="round-img" :src="rencontre.photo.url" alt="">
         <h3>{{rencontre.nom}}</h3>
         <section class="text-justify" v-html="$md.render(rencontre.texte)"></section>
         <div class="margin-20">
@@ -33,7 +33,7 @@
     <h1 class="text-center margin-10">Articles</h1>
     <div class="rencontre d-lg-flex flex-row align-items-center justify-content-around" v-for="article in pay.articles">
       <div class="col-xl-3">
-        <img :src="'https://afternoon-river-68648.herokuapp.com' + article.imagePresentation.url" alt="">
+        <img :src="article.imagePresentation.url" alt="">
       </div>
       <div class="col-xl-6 flex-column">
         <h3 class="text-uppercase">{{article.titre}}</h3>

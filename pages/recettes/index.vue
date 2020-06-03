@@ -3,7 +3,7 @@
     <h1>Les recettes du périple</h1>
     <div class="rencontre d-lg-flex flex-row align-items-center justify-content-around" v-for="recettes in filteredList">
       <div class="col-xl-3">
-        <img :src="'https://afternoon-river-68648.herokuapp.com' + recettes.photo.url" alt="">
+        <img :src="recettes.photo.url" alt="">
       </div>
       <div class="col-xl-6 flex-column">
         <div class="margin-10">

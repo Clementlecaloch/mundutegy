@@ -82,7 +82,7 @@
         <div v-for="article in filteredList" v-bind:key="article.id" class="article">
           <div class="row justify-content-lg-start align-items-center">
             <div class="col-lg-3 overflow-hidden">
-              <img class="img-article" :src="'https://afternoon-river-68648.herokuapp.com' + article.imagePresentation.url">
+              <img class="img-article" :src="article.imagePresentation.url">
             </div>
             <div class="col-lg-6">
               <div class="margin-10">

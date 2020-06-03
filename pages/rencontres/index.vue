@@ -3,7 +3,7 @@
     <h1>Nos rencontres</h1>
     <div class="rencontre d-lg-flex flex-row align-items-center justify-content-around" v-for="rencontre in filteredList">
       <div class="col-xl-3">
-        <img :src="'https://afternoon-river-68648.herokuapp.com' + rencontre.photo.url" alt="">
+        <img :src="rencontre.photo.url" alt="">
       </div>
       <div class="col-xl-6 flex-column">
         <h3 class="text-uppercase">{{rencontre.nom}}</h3>
