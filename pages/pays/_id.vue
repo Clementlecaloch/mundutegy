@@ -5,7 +5,7 @@
     <h1 class="margin-10">Les photos</h1>
     <div class="gallery" id="gallery">
       <div class="mb-3 pics animation all 2" v-for="image in pay.galerie.photos">
-        <a class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="'https://afternoon-river-68648.herokuapp.com' + image.url" alt=""></a>
+        <a class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="image.url" alt=""></a>
       </div>
     </div>
     <h1 class="text-center margin-10">Recettes</h1>
