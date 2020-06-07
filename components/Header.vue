@@ -7,13 +7,13 @@
               <span class="hamburger"></span>
           </span>
           <ul>
-            <li><router-link to="/">Bienvenue</router-link></li>
-            <li><router-link to="/pays">Périples</router-link></li>
-            <li><router-link to="/rencontres">Rencontres</router-link></li>
-            <li class="logo"><router-link to="/"><img src="../assets/image/logo.png" alt="Logo"></router-link></li>
-            <li><router-link to="/recettes">Cuisine du monde</router-link></li>
-            <li><router-link to="/livres">Livres et écritures</router-link></li>
-            <li><router-link to="/inspiration">Inspirations</router-link></li>
+            <li v-on:click="uncheck"><router-link  to="/">Bienvenue</router-link></li>
+            <li v-on:click="uncheck"><router-link  to="/pays">Périples</router-link></li>
+            <li v-on:click="uncheck"><router-link  to="/rencontres">Rencontres</router-link></li>
+            <li v-on:click="uncheck" class="logo"><router-link  to="/"><img src="../assets/image/logo.png" alt="Logo"></router-link></li>
+            <li v-on:click="uncheck"><router-link  to="/recettes">Cuisine du monde</router-link></li>
+            <li v-on:click="uncheck"><router-link  to="/livres">Livres et écritures</router-link></li>
+            <li v-on:click="uncheck"><router-link  to="/inspiration">Inspirations</router-link></li>
           </ul>
         </label>
       </nav>
@@ -28,7 +28,13 @@
 
 <script>
     export default {
-        name: "Header"
+      name: "Header",
+      methods: {
+        uncheck: function() {
+          var item = document.getElementById('check');
+          item.checked = false;
+        },
+      }
     }
 </script>
 
