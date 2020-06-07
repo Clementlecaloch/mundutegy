@@ -39,6 +39,9 @@ export default {
   buildModules: [
     '@nuxtjs/moment',
   ],
+  moment: {
+    locales: ['fr'],
+  },
   /*
   ** Nuxt.js modules
   */

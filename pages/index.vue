@@ -12,7 +12,7 @@
             </div>
             <p class="col-sm text-justify">Je suis Nathalie. Un peu rêveuse, utopique, sorcière...
               J'aime vivre, avec ou sans les autres.
-              Communiquer, dans la même langue, où d'autres, où simplement par le regard.
+              Communiquer, dans la même langue, ou d'autres, ou simplement par le regard.
               J'aime la nature, sauvage ou jardinée
               J'aime regarder le lever de la lune, le coucher de soleil, l'oiseau qui se baigne, l’écureuil qui vient manger des noix...
               J'aime LE voyage, le mouvement, la découverte, les échanges.
@@ -39,30 +39,36 @@
             <img class="icon" src="~/assets/image/icon-boussole.png" alt="">
             <h3>PÉRIPLES</h3>
             <p class="text-center">
-              Évadez vous à travers nos récits de voyages nos coup de coeur et nos reportage du monde. <br> La vie quotidienne du pays et nos reportages. </p>
+              Évadez vous à travers nos récits de voyages nos coup de coeur et nos reportage du monde. <br> La vie quotidienne du pays et nos reportages.
+              <br>
+              « Voyage avec deux sacs : l’un pour donner, l’autre pour recevoir. » Goethe
+            </p>
           </router-link>
         </div>
         <div class="col-sm icon-nav">
           <router-link to="/rencontres" class="link">
             <img class="icon" src="~/assets/image/icon-hand.png" alt="">
             <h3>RENCONTRES</h3>
-            <p class="text-center">"Et puis il y a ceux que l’on croise que l’on connaît à peine, qui vous disent un mot, une phrases, vous accordent une minutes, une demi heures, et changent le cours de votre vie.” Victor Hugo </p>
+            <p class="text-center">« Et puis il y a ceux que l’on croise, que l’on connaît à peine, qui vous disent un mot, une phrase, vous accordent une minute, une demi-heure, et changent le cours de votre vie. » Victor Hugo</p>
           </router-link>
         </div>
         <div class="col-sm icon-nav">
           <router-link to="/recettes" class="link">
             <img class="icon" src="~/assets/image/icon-bowl.png" alt="">
             <h3>CUISINE DU MONDE</h3>
-            <p class="text-center">Parce que voyager c’est aussi découvrir la cuisine local on vous partagez les recettes des pays pour voyager depuis vos papilles. </p>
+            <p class="text-center">Parce que voyager c’est aussi découvrir la cuisine local on vous partagez les recettes des pays pour voyager depuis vos papilles.
+              <br>« La cuisine était un monde en soi. Exactement comme le disait Shakespeare. Le monde était une cuisine. » Haruki Murakami
+            </p>
           </router-link>
         </div>
         <div class="col-sm icon-nav">
           <router-link to="/livres" class="link">
             <img class="icon" src="~/assets/image/icon-book.png" alt="">
-            <h3>LIVRES ET ÉCRITURES</h3>
+            <h3>LIVRES ET ÉCRITURE</h3>
             <p class="text-center">Pénétrer dans notre univers littéraires ! <br>
               Les livres de Gilles écrivain, raconteur d’histoire délicate et prenante. <br>
-              Peut-être bientôt les livres pour enfant de nathalie publiés, en attendant les venez les lires !
+              Peut-être bientôt les livres pour enfant de nathalie publiés, en attendant les venez les lires ! <br>
+              « Si tous les livres lus sont autant d’échappées belles sur les routes du monde, écrire, c’est s’inventer des chemins vierges. » Jean-Pierre Otte
             </p>
           </router-link>
         </div>
@@ -70,7 +76,9 @@
           <router-link to="/" class="link">
             <img class="icon" src="~/assets/image/icon-eye.png" alt="">
             <h3>INSPIRATIONS</h3>
-            <p class="text-center">Découvrez ici nos inspiratrices et inspirateurs une rubrique inspirante qui, depuis petit nous inspirent et nous donnent le goût du voyage.</p>
+            <p class="text-center">Découvrez ici nos inspiratrices et inspirateurs une rubrique inspirante qui, depuis petit nous inspirent et nous donnent le goût du voyage
+              <br>« Ne renoncez pas à ce que vous voulez vraiment faire. Là où il y a des rêves, de l’amour et de l’inspiration, vous ne pouvez pas vous tromper. » Ella Fitzgerald
+            </p>
           </router-link>
         </div>
       </div>
@@ -88,7 +96,7 @@
               <div class="margin-10">
                 <h3>{{article.titre}}</h3>
                 <div class="trait-10"></div>
-                <legend>{{moment(article.dateDePublication).format("L")}}</legend>
+                <legend>{{moment(article.dateDePublication).format("LL")}}</legend>
               </div>
               <p class="text-justify" v-html="$md.render(article.contenu)"></p>
             </div>
