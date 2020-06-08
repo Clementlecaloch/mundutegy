@@ -24,7 +24,7 @@ h4 {
   font-size:24px;
 }
 
-p, .preview ul, .pays-recettes section, .pays-rencontre section {
+p, .preview ul, .pays-recettes section, .pays-rencontre section, .article-content ul {
   line-height: 24px;
   font-weight: 300;
 }
@@ -230,8 +230,8 @@ iframe {
 }
 
 .round-img {
-  height: auto;
-  width: 100%;
+  max-height: 300px;
+  width: auto;
   clip-path: circle(40% at 50%);
 }
 

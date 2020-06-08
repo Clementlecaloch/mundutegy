@@ -8,7 +8,7 @@
         <h3>{{article.pays.Nom}}</h3>
         <h4>{{moment(article.dateDePublication).format("L")}}</h4>
       </div>
-      <section class="text-justify" v-html="$md.render(article.contenu)"></section>
+      <section class="text-justify article-content" v-html="$md.render(article.contenu)"></section>
       <div v-if="article.galerie" class="gallery" id="gallery">
         <div class="mb-3 pics animation all 2" v-for="image in article.galerie.photos">
           <a class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="image.url" alt=""></a>
@@ -42,3 +42,19 @@
   }
 </script>
 
+<style>
+  .article-content img {
+    width: 30%;
+    height: auto;
+    padding: 20px 20px 20px 0px;
+  }
+
+  .article-content ul {
+    list-style: disc;
+    padding: 10px 20px;
+  }
+
+  .article-content a {
+    text-decoration: underline;
+  }
+</style>

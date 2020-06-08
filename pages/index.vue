@@ -39,8 +39,6 @@
             <img class="icon" src="~/assets/image/icon-boussole.png" alt="">
             <h3>PÉRIPLES</h3>
             <p class="text-center">
-              Évadez vous à travers nos récits de voyages nos coup de coeur et nos reportage du monde. <br> La vie quotidienne du pays et nos reportages.
-              <br>
               « Voyage avec deux sacs : l’un pour donner, l’autre pour recevoir. » Goethe
             </p>
           </router-link>
@@ -56,8 +54,8 @@
           <router-link to="/recettes" class="link">
             <img class="icon" src="~/assets/image/icon-bowl.png" alt="">
             <h3>CUISINE DU MONDE</h3>
-            <p class="text-center">Parce que voyager c’est aussi découvrir la cuisine local on vous partagez les recettes des pays pour voyager depuis vos papilles.
-              <br>« La cuisine était un monde en soi. Exactement comme le disait Shakespeare. Le monde était une cuisine. » Haruki Murakami
+            <p class="text-center">
+              « La cuisine était un monde en soi. Exactement comme le disait Shakespeare. Le monde était une cuisine. » Haruki Murakami
             </p>
           </router-link>
         </div>
@@ -65,9 +63,7 @@
           <router-link to="/livres" class="link">
             <img class="icon" src="~/assets/image/icon-book.png" alt="">
             <h3>LIVRES ET ÉCRITURE</h3>
-            <p class="text-center">Pénétrer dans notre univers littéraires ! <br>
-              Les livres de Gilles écrivain, raconteur d’histoire délicate et prenante. <br>
-              Peut-être bientôt les livres pour enfant de nathalie publiés, en attendant les venez les lires ! <br>
+            <p class="text-center">
               « Si tous les livres lus sont autant d’échappées belles sur les routes du monde, écrire, c’est s’inventer des chemins vierges. » Jean-Pierre Otte
             </p>
           </router-link>
@@ -76,8 +72,8 @@
           <router-link to="/" class="link">
             <img class="icon" src="~/assets/image/icon-eye.png" alt="">
             <h3>INSPIRATIONS</h3>
-            <p class="text-center">Découvrez ici nos inspiratrices et inspirateurs une rubrique inspirante qui, depuis petit nous inspirent et nous donnent le goût du voyage
-              <br>« Ne renoncez pas à ce que vous voulez vraiment faire. Là où il y a des rêves, de l’amour et de l’inspiration, vous ne pouvez pas vous tromper. » Ella Fitzgerald
+            <p class="text-center">
+              « Ne renoncez pas à ce que vous voulez vraiment faire. Là où il y a des rêves, de l’amour et de l’inspiration, vous ne pouvez pas vous tromper. » Ella Fitzgerald
             </p>
           </router-link>
         </div>
