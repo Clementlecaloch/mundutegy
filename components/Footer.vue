@@ -21,7 +21,7 @@
         </div>
       </div>
         <p class="text-center"><a href="mailto:natgil.mundutegy@gmail.com">Nous contacter sur : natgil.mundutegy@gmail.com</a></p>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" method="POST" data-netlify="true" action="../pages/index.vue">
           <p>
             <label>Your Name: <input type="text" name="name" /></label>
           </p>
