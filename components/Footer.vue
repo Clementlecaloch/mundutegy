@@ -21,17 +21,17 @@
         </div>
       </div>
       <h3 class="text-center padding-20">Une question ? Contactez nous</h3>
-        <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="pages/">
+        <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="/success">
           <div class="form">
             <input type="hidden" name="form-name" value="ask-question" />
             <label for="nom">Nom :</label>
-            <input type="text" name="name" id="nom" />
+            <input type="text" name="name" id="nom" required/>
             <label for="mail">Mail :</label>
-            <input type="email" name="mail" id="mail">
+            <input type="email" name="mail" id="mail" required>
             <label for="subject">Sujet :</label>
-            <input type="text" name="subject" id="subject">
+            <input type="text" name="subject" id="subject" required>
             <label for="message">Message: </label>
-            <textarea name="message" id="message"></textarea>
+            <textarea name="message" id="message" required></textarea>
           </div>
           <div class="container-button text-center">
             <button type="submit" class="button button-form">Envoyer</button>
