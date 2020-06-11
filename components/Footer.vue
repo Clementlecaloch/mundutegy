@@ -20,8 +20,8 @@
           <img class="footer-img" src="../assets/image/eux5.jpg" alt="">
         </div>
       </div>
-      <h3 class="text-center padding-20">Une question ? contactez nous</h3>
-        <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <h3 class="text-center padding-20">Une question ? Contactez nous</h3>
+        <form name="ask-question" method="post" data-netlify="true" data-netlify-honeypot="bot-field" action="pages/">
           <div class="form">
             <input type="hidden" name="form-name" value="ask-question" />
             <label for="nom">Nom :</label>
