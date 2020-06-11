@@ -1,7 +1,7 @@
 <template>
   <div class="container part">
     <h1>Nos livres</h1>
-    <div class="livre d-lg-flex flex-row align-items-center justify-content-around" v-for="livres in filteredList" v-bind="livres.id">
+    <div class="livre d-lg-flex flex-row align-items-center justify-content-around" v-for="livres in filteredList" v-bind="livres.id" data-aos="zoom-up" data-aos-duration="1000">
       <div class="col-xl-3">
         <img :src="livres.couverture.url" alt="">
       </div>

@@ -1,11 +1,13 @@
 <template>
     <div>
-      <div class="row actual align-items-center" v-for="pays in filteredList" v-bind:key="pays.id">
-        <div class="col-lg-2">
+      <div class="row actual align-items-center align-items-center text-center" v-for="pays in filteredList" v-bind:key="pays.id">
+        <div class="col-lg-3">
           <img class="drapeau margin-10" :src=" pays.drapeau.url" alt="">
         </div>
-        <h2 class="col-lg-5">En ce moment <br> {{pays.Nom}}</h2>
-        <router-link class="button" :to="{ name: 'pays-id', params: { id: pays.id }}" tag="a">En savoir plus</router-link>
+        <h2 class="col-lg-6">En ce moment <br> {{pays.Nom}}</h2>
+        <div class="container-button  col-lg-3 text-center">
+          <router-link class="button" :to="{ name: 'pays-id', params: { id: pays.id }}" tag="a">En savoir plus</router-link>
+        </div>
         <div class="container-plane">
           <img class="plane" src="../assets/image/plane.png" alt="">
         </div>

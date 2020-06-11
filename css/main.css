@@ -58,9 +58,7 @@ p, .preview ul, .pays-recettes section, .pays-rencontre section, .article-conten
 .presentation-accueil > div{
   padding-bottom: 20px;
 }
-.presentation-accueil p {
-  padding: 30px;
-}
+
 .img-accueil {
   height: auto;
   width: 80%;
@@ -72,8 +70,8 @@ p, .preview ul, .pays-recettes section, .pays-rencontre section, .article-conten
   height: auto;
 }
 .image-oneArticle {
-  max-height: 500px;
-  width: auto;
+  height: auto;
+  width: 30%;
 }
 .icon-nav .link {
   display: flex;
@@ -93,6 +91,10 @@ p, .preview ul, .pays-recettes section, .pays-rencontre section, .article-conten
 
 .icon-nav h3, .icon-nav img, .icon-nav p, .rencontre {
   padding: 10px;
+}
+
+.icon-nav h3 {
+  text-align: center;
 }
 
 .icon {
@@ -143,17 +145,9 @@ iframe {
   margin-bottom: 10px;
 }
 
-.fourArticles {
-  display: flex;
-  flex-direction: column;
-}
-
-.fourArticles > .article {
-  margin-bottom: 10px;
-}
-
 .container-button {
-  padding: 20px 20px;
+  padding: 20px 0;
+  margin: 10px 0;
 }
 
 .trait, .trait-10 {
@@ -286,18 +280,21 @@ iframe {
 }
 
 
-
-@media screen and (min-width: 1024px) {
-  .fourArticles, .allArticles{
-    display: grid;
-    width: 90%;
-    margin: auto;
-    grid-template-columns: 48% 48%;
-    grid-column-gap: 4%;
-    grid-row-gap: 50px;
+@media screen and (max-width: 450px) {
+  video {
+    margin-bottom: 20px;
+  }
+  .img-accueil {
+    width: 100%;
   }
 
-  .allArticles {
-    width: 100%;
+  .beau-gosse {
+    background-size: cover;
+    background-position: 25%;
+    height: 200px;
+    background-repeat: no-repeat;
+  }
+  .image-oneArticle {
+    width: 50%;
   }
 }

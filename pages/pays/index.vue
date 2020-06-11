@@ -3,16 +3,20 @@
       <h1>Notre périple</h1>
       <div class="trait margin-10"></div>
       <PaysActuel />
-      <div v-for="continent in filteredList"  v-bind:key="continent.id">
-        <h1>{{continent.nom}}</h1>
-        <div class="row nom-pays align-items-center" v-for="pays in continent.pays" v-bind:key="continent.pays.id">
-          <div class="col-lg-2">
-            <img class="drapeau" :src="pays.drapeau.url" alt="">
+        <div v-for="continent in filteredList"  v-bind:key="continent.id" >
+          <h1>{{continent.nom}}</h1>
+          <div class="align-items-center text-center" data-aos="zoom-up" data-aos-duration="1000">
+              <div class="row nom-pays" v-for="pays in continent.pays" v-bind:key="continent.pays.id">
+                <div class="col-lg-3">
+                  <img class="drapeau" :src="pays.drapeau.url" alt="">
+                </div>
+                <h2 class="col-lg-6">{{pays.Nom}}</h2>
+                <div class="container-button col-lg-3">
+                  <router-link class="button" :to="{ name: 'pays-id', params: { id: pays.id }}" tag="a">En savoir plus</router-link>
+                </div>
+              </div>
           </div>
-          <h2 class="col-lg-5">{{pays.Nom}}</h2>
-          <router-link class="button" :to="{ name: 'pays-id', params: { id: pays.id }}" tag="a">En savoir plus</router-link>
         </div>
-      </div>
   </div>
 </template>
 

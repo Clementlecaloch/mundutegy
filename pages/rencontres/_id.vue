@@ -1,6 +1,6 @@
 <template>
   <div class="container part oneArticle">
-    <img class="float-right image" :src="rencontre.photo.url" alt="">
+    <img class="float-right image img-article" :src="rencontre.photo.url" alt="">
     <div class="flex-column ">
       <div class="margin-10">
         <h2>{{rencontre.nom}}</h2>

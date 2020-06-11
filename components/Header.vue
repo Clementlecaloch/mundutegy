@@ -18,7 +18,7 @@
         </label>
       </nav>
       <div class="carte">
-        <div class="container">
+        <div class="container" data-aos="zoom-up" data-aos-duration="2000">
           <h1>NAT & GIL - GLOBE CROQUEURS<br> MUNDUTEGY</h1>
           <legend>700 jours</legend>
         </div>
@@ -34,7 +34,8 @@
           var item = document.getElementById('check');
           item.checked = false;
         },
-      }
+      },
+
     }
 </script>
 
@@ -172,7 +173,7 @@
       visibility: hidden;
       opacity: 0;
       z-index: 100;
-      position: absolute;
+      position: fixed;
       right: 50%;
       transform: translate(50%, 20%);
       transition: 0.4s 0s ease-in-out;

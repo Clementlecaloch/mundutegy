@@ -11,7 +11,7 @@
       <section class="text-justify article-content" v-html="$md.render(article.contenu)"></section>
       <div v-if="article.galerie" class="gallery" id="gallery">
         <div class="mb-3 pics animation all 2" v-for="image in article.galerie.photos">
-          <a class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="image.url" alt=""></a>
+          <a data-aos="zoom-up" data-aos-duration="1000" class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="image.url" alt=""></a>
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@
   .article-content img {
     width: 30%;
     height: auto;
-    padding: 20px 20px 20px 0px;
+    padding: 20px 20px 20px 0;
   }
 
   .article-content ul {

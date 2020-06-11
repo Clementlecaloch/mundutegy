@@ -1,12 +1,12 @@
 <template>
   <div class="container-fluid">
     <div class="part">
-      <div class="row align-items-start">
+      <div class="row align-items-center">
         <video controls autoplay class="col-sm">
           <source src="~/assets/video/accueil.mp4" type="video/mp4">
         </video>
         <div class="col-sm presentation-accueil">
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-sm">
               <img class="img-accueil" src="~/assets/image/eux1.jpg" alt="">
             </div>
@@ -20,7 +20,7 @@
               Aller. Partir, et revenir
               ​</p>
           </div>
-          <div class="row">
+          <div class="row align-items-center">
             <div class="col-sm">
               <img class="img-accueil" src="~/assets/image/eux2.jpg" alt="">
             </div>
@@ -34,7 +34,7 @@
     <div class="part">
       <h1 class="text-center">Explorer</h1>
       <div class="row">
-        <div class="col-sm icon-nav ">
+        <div class="col-sm icon-nav " data-aos="flip-up" data-aos-duration="1000" data-aos-delay="0">
           <router-link to="/pays" class="link">
             <img class="icon" src="~/assets/image/icon-boussole.png" alt="">
             <h3>PÉRIPLES</h3>
@@ -43,14 +43,14 @@
             </p>
           </router-link>
         </div>
-        <div class="col-sm icon-nav">
+        <div class="col-sm icon-nav" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
           <router-link to="/rencontres" class="link">
             <img class="icon" src="~/assets/image/icon-hand.png" alt="">
             <h3>RENCONTRES</h3>
             <p class="text-center">« Et puis il y a ceux que l’on croise, que l’on connaît à peine, qui vous disent un mot, une phrase, vous accordent une minute, une demi-heure, et changent le cours de votre vie. » Victor Hugo</p>
           </router-link>
         </div>
-        <div class="col-sm icon-nav">
+        <div class="col-sm icon-nav" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
           <router-link to="/recettes" class="link">
             <img class="icon" src="~/assets/image/icon-bowl.png" alt="">
             <h3>CUISINE DU MONDE</h3>
@@ -59,7 +59,7 @@
             </p>
           </router-link>
         </div>
-        <div class="col-sm icon-nav">
+        <div class="col-sm icon-nav" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
           <router-link to="/livres" class="link">
             <img class="icon" src="~/assets/image/icon-book.png" alt="">
             <h3>LIVRES ET ÉCRITURE</h3>
@@ -68,7 +68,7 @@
             </p>
           </router-link>
         </div>
-        <div class="col-sm icon-nav">
+        <div class="col-sm icon-nav" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
           <router-link to="/" class="link">
             <img class="icon" src="~/assets/image/icon-eye.png" alt="">
             <h3>INSPIRATIONS</h3>
@@ -82,8 +82,8 @@
     <div class="beau-gosse"></div>
     <div class="part">
       <h1 class="text-center">Découvrir</h1>
-      <div class="fourArticles">
-        <div v-for="article in filteredList" v-bind:key="article.id" class="article">
+      <div class="flex-column">
+        <div v-for="article in filteredList" v-bind:key="article.id" class="article" data-aos="zoom-up" data-aos-duration="1000">
           <div class="row justify-content-lg-start align-items-center">
             <div class="col-lg-3 overflow-hidden">
               <img class="img-article" :src="article.imagePresentation.url">
@@ -96,7 +96,7 @@
               </div>
               <p class="text-justify" v-html="$md.render(article.contenu)"></p>
             </div>
-            <div class="col-lg-3 container-button">
+            <div class="col-lg-3 container-button text-center">
               <router-link class="button" :to="{ name: 'articles-id', params: { id: article.id }}" tag="a">Lire la suite</router-link>
             </div>
           </div>
