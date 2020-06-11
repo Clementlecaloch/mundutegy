@@ -264,6 +264,22 @@ iframe {
   -ms-transform: scale(1);
   transform: scale(1); }
 
+.form{
+  padding: 20px 0;
+  width: 50%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 20px;
+}
+.form label {
+  color: white;
+}
+
+.form > * {
+  padding: 10px 0;
+}
+
 @media (max-width: 450px) {
   .gallery {
     -webkit-column-count: 1;
@@ -296,5 +312,12 @@ iframe {
   }
   .image-oneArticle {
     width: 50%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
   }
 }
