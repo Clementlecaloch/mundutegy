@@ -1,18 +1,20 @@
 <template>
   <div class="container part">
     <h1>Nos livres</h1>
-    <div class="livre d-lg-flex flex-row align-items-center justify-content-around" v-for="livres in filteredList" v-bind="livres.id" data-aos="zoom-up" data-aos-duration="1000">
-      <div class="col-xl-3">
-        <img :src="livres.couverture.url" alt="">
-      </div>
-      <div class="col-xl-6 flex-column">
-        <h3 class="text-uppercase">{{livres.titre}}</h3>
-        <div class="trait"></div>
-        <section class="text-justify" v-html="$md.render(livres.resume)"></section>
-      </div>
-      <div class="col-xl-3 row justify-content-around align-items-center">
-        <p>{{livres.prix}} €</p>
-        <a class="button" v-bind:href="livres.lien" target="_blank">Acheter le livre</a>
+    <div class="livre" v-for="livres in filteredList" v-bind="livres.id" >
+      <div class=" d-lg-flex flex-row align-items-center justify-content-around" data-aos="zoom-up" data-aos-duration="1000" >
+        <div class="col-xl-3">
+          <img :src="livres.couverture.url" alt="">
+        </div>
+        <div class="col-xl-6 flex-column">
+          <h3 class="text-uppercase">{{livres.titre}}</h3>
+          <div class="trait"></div>
+          <section class="text-justify" v-html="$md.render(livres.resume)"></section>
+        </div>
+        <div class="col-xl-3 row justify-content-around align-items-center">
+          <p>{{livres.prix}} €</p>
+          <a class="button" v-bind:href="livres.lien" target="_blank">Acheter le livre</a>
+        </div>
       </div>
     </div>
   </div>

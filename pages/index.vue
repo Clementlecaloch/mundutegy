@@ -83,8 +83,8 @@
     <div class="part">
       <h1 class="text-center">Découvrir</h1>
       <div class="flex-column">
-        <div v-for="article in filteredList" v-bind:key="article.id" class="article" data-aos="zoom-up" data-aos-duration="1000">
-          <div class="row justify-content-lg-start align-items-center">
+        <div v-for="article in filteredList" v-bind:key="article.id" class="article">
+          <div class="row justify-content-lg-start align-items-center" data-aos="zoom-up" data-aos-duration="1000">
             <div class="col-lg-3 overflow-hidden">
               <img class="img-article" :src="article.imagePresentation.url">
             </div>
