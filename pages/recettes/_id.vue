@@ -5,7 +5,7 @@
       <div class="trait"></div>
       <legend>{{recette.pays.Nom}}</legend>
     </div>
-    <iframe type="text/html" width="100%" height="auto" :src="recette.videoLien" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
+    <iframe v-if="recette.videoLien" type="text/html" width="100%" height="auto" :src="recette.videoLien" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
     <section class="text-justify" v-html="$md.render(recette.recette)"></section>
   </div>
 </template>
