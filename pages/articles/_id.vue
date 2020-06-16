@@ -43,18 +43,5 @@
 </script>
 
 <style>
-  .article-content img {
-    width: 30%;
-    height: auto;
-    padding: 20px 20px 20px 0;
-  }
 
-  .article-content ul {
-    list-style: disc;
-    padding: 10px 20px;
-  }
-
-  .article-content a {
-    text-decoration: underline;
-  }
 </style>

@@ -7,7 +7,7 @@
         <div class="trait"></div>
         <h3>{{rencontre.pays.Nom}}</h3>
       </div>
-      <section class="text-justify " v-html="$md.render(rencontre.texte)"></section>
+      <section class="text-justify article-content" v-html="$md.render(rencontre.texte)"></section>
     </div>
   </div>
 </template>

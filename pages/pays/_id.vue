@@ -4,7 +4,7 @@
     <iframe v-if="pay.carte" class="maps" :src="pay.carte"></iframe>
     <h1 v-if="pay.galerie" class="margin-10">Les photos</h1>
     <div v-if="pay.galerie" class="gallery" id="gallery">
-      <div class="mb-3 pics animation all 2" v-for="image in pay.galerie.photos">
+      <div class="mb-3 pics all 2" v-for="image in pay.galerie.photos">
         <a data-aos="zoom-up" data-aos-duration="1000" class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="image.url" alt=""></a>
       </div>
     </div>
@@ -41,9 +41,11 @@
           <img :src="article.imagePresentation.url" alt="">
         </div>
         <div class="col-xl-6 flex-column">
-          <h3 class="text-uppercase">{{article.titre}}</h3>
-          <div class="trait-10"></div>
-          <legend>{{pay.Nom}}</legend>
+          <div class="margin-10">
+            <h3 class="text-uppercase">{{article.titre}}</h3>
+            <div class="trait-10"></div>
+            <legend>{{pay.Nom}} - {{moment(article.dateDePublication).format("LL")}}</legend>
+          </div>
           <section class="text-justify" v-html="$md.render(article.contenu)"></section>
         </div>
         <div class="col-xl-3 row justify-content-around align-items-center">
@@ -55,13 +57,15 @@
 </template>
 
 <script>
+  var moment = require("moment");
   import onePays from '~/apollo/queries/pays/onePays';
 
   export default {
     data() {
       return {
         title: "Pays",
-        pay: Object
+        pay: Object,
+        moment: moment
       }
     },
     apollo: {
