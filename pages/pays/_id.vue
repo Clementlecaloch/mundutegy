@@ -4,8 +4,8 @@
     <iframe v-if="pay.carte" class="maps" :src="pay.carte"></iframe>
     <h1 v-if="pay.galerie" class="margin-10">Les photos</h1>
     <div v-if="pay.galerie" class="gallery" id="gallery">
-      <div class="mb-3 pics all 2" v-for="image in pay.galerie.photos">
-        <a data-aos="zoom-up" data-aos-duration="1000" class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="image.url" alt=""></a>
+      <div class="mb-3 pics" v-for="image in pay.galerie.photos">
+        <a data-aos="zoom-up" data-aos-duration="500" class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="image.url" alt=""></a>
       </div>
     </div>
     <h1 v-if="pay.recettes" class="text-center margin-10">Recettes</h1>
