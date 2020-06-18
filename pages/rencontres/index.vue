@@ -11,9 +11,11 @@
           <img class="w-100" :src="rencontre.photo.url" alt="">
         </div>
         <div class="col-xl-6 flex-column">
-          <h3 class="text-uppercase">{{rencontre.nom}}</h3>
-          <div class="trait-10"></div>
-          <legend>{{rencontre.pays.Nom}}</legend>
+          <div class="margin-10 flex-column">
+            <h3 class="text-uppercase">{{rencontre.nom}}</h3>
+            <div class="trait-10"></div>
+            <legend>{{rencontre.pays.Nom}}</legend>
+          </div>
           <section class="text-justify preview text-format" v-html="$md.render(rencontre.texte)"></section>
         </div>
         <div class="col-xl-3 row justify-content-around align-items-center container-button">

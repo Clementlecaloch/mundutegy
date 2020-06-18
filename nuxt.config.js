@@ -27,6 +27,7 @@ export default {
     "css/reset.css",
     "css/main.css",
     "css/header.css",
+    "css/footer.css",
     "css/success.css",
     "aos/dist/aos.css"
   ],
