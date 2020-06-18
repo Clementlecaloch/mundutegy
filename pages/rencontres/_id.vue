@@ -1,4 +1,7 @@
 <template>
+
+  <!-- RENCONTRE -->
+
   <div class="container part oneArticle">
     <img class="float-right image img-article" :src="rencontre.photo.url" alt="">
     <div class="flex-column ">
@@ -7,7 +10,7 @@
         <div class="trait"></div>
         <h3>{{rencontre.pays.Nom}}</h3>
       </div>
-      <section class="text-justify article-content" v-html="$md.render(rencontre.texte)"></section>
+      <section class="text-justify text-format" v-html="$md.render(rencontre.texte)"></section>
     </div>
   </div>
 </template>

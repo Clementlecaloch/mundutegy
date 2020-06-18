@@ -26,6 +26,8 @@ export default {
   css: [
     "css/reset.css",
     "css/main.css",
+    "css/header.css",
+    "css/success.css",
     "aos/dist/aos.css"
   ],
 

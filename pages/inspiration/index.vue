@@ -1,4 +1,7 @@
 <template>
+
+  <!-- INSPIRATION -->
+
   <div class="container part">
     <h1>Nos inspirations</h1>
     <div class="row justify-content-around">

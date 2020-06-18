@@ -1,4 +1,7 @@
 <template>
+
+  <!-- RECETTE -->
+
   <div class="container part oneArticle">
     <div class="justify-content-between">
       <h2>{{recette.titre}}</h2>
@@ -6,7 +9,7 @@
       <legend>{{recette.pays.Nom}}</legend>
     </div>
     <iframe v-if="recette.videoLien" type="text/html" width="100%" height="auto" :src="recette.videoLien" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen/>
-    <section class="text-justify article-content" v-html="$md.render(recette.recette)"></section>
+    <section class="text-justify text-format" v-html="$md.render(recette.recette)"></section>
   </div>
 </template>
 

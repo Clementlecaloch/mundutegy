@@ -1,3 +1,7 @@
+/*
+  01: GLOBAL
+ */
+
 body {
   background-color: white;
   overflow-x: hidden;
@@ -23,84 +27,123 @@ h3 {
 h4 {
   font-size:24px;
 }
-
-p, .preview ul, .pays-recettes section, .pays-rencontre section, .article-content ul {
-  line-height: 24px;
-  font-weight: 300;
-}
 .part {
   width: 100%;
   padding: 50px 20px;
+}
+
+p, .text-format {
+  line-height: 24px;
+  font-weight: 300;
+}
+
+.preview {
+  text-overflow:ellipsis;
+  overflow: hidden;
+  height:144px;
+}
+
+
+/*
+  02: MARGIN & PADDING
+ */
+
+.padding-20, .livre {
+  padding: 20px;
+}
+
+.form > * {
+  padding: 10px 0;
+}
+
+.trait-10, .margin-10 {
+  margin: 10px 0;
+}
+
+.margin-20 {
+  margin: 20px;
 }
 
 .part h1 {
   padding-bottom: 20px;
 }
 
-
-.article  {
+.article, .pays-recettes, .pays-rencontre, .rencontre, .padding-10  {
   padding: 10px;
-}
-.article p, .rencontre section, .pays-recettes section, .pays-rencontre section {
-  text-overflow:ellipsis;
-  overflow: hidden;
-  height:144px;
 }
 
 .image {
   margin-left: 10px;
 }
 
-.pays-recettes, .pays-rencontre {
-  padding: 10px;
-}
-
 .presentation-accueil > div{
   padding-bottom: 20px;
 }
 
-.img-accueil {
-  height: auto;
-  width: 80%;
+.nom-pays {
+  margin-bottom: 10px;
+}
+
+.container-button {
+  padding: 20px 0;
+  margin: 10px 0;
+}
+
+video {
+  margin-bottom: 20px;
 }
 
 
-.img-article {
-  width: 100%;
-  height: auto;
+.link-button {
+  margin-left: 15px;
 }
+
+.margin-b-10 {
+  margin-bottom: 10px;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+/*
+  03: IMAGES & ELEMENTS SIZE
+ */
+
 .image-oneArticle {
   height: auto;
-  width: 30%;
-}
-.icon-nav .link {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.link, .livre, .rencontre, .article, .hover-effect {
-  transition: 0.2s ease;
-}
-
-.link:hover, .livre:hover, .rencontre:hover, .article:hover, .hover-effect:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 5px 15px black;
-}
-
-.icon-nav h3, .icon-nav img, .icon-nav p, .rencontre {
-  padding: 10px;
-}
-
-.icon-nav h3 {
-  text-align: center;
+  width: 50%;
 }
 
 .icon {
   height: 80px;
   width: 80px;
 }
+
+iframe {
+  width: 100%;
+  height: 500px;
+}
+
+.w-100 {
+  width: 100%;
+  height:auto;
+}
+
+.drapeau {
+  height: auto;
+  width: 50%;
+}
+
+.round-img {
+  height: auto;
+  width: 80%;
+  clip-path: circle(40% at 50%);
+}
+
+/*
+  ANIMATION GLOBAL
+ */
 
 .button {
   border: 1px solid black;
@@ -131,23 +174,20 @@ p, .preview ul, .pays-recettes section, .pays-rencontre section, .article-conten
   width: 101%;
 }
 
-iframe {
-  width: 100%;
-  height: 500px;
+
+.hover-effect {
+  transition: 0.2s ease;
 }
+
+.hover-effect:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 15px black;
+}
+
 
 .maps {
   overflow:hidden;
   clip-path: polygon(0 11%, 100% 11%, 100% 100%, 0% 100%);
-}
-
-.nom-pays {
-  margin-bottom: 10px;
-}
-
-.container-button {
-  padding: 20px 0;
-  margin: 10px 0;
 }
 
 .trait, .trait-10 {
@@ -157,27 +197,28 @@ iframe {
   margin: 20px 0;
 }
 
-.trait-10, .margin-10 {
-  margin: 10px 0;
+/*
+ FOOTER
+ */
+
+footer {
+  background-color: black;
+  color: white;
 }
 
-.margin-20 {
-  margin: 20px;
+.col-sm {
+  padding: 0;
 }
 
-.livre {
-  padding: 20px;
-}
-.livre img, .rencontre img {
-  width: 100%;
-  height:auto;
+.button-form {
+  filter: invert();
+  background-color: white;
 }
 
-.drapeau {
-  height: 100px;
-  width: auto;
-  clip-path: circle(50px at 85px);
-}
+/*
+  PLANE ANIMATION
+ */
+
 .container-plane {
   width: 100%;
   position: relative;
@@ -212,106 +253,76 @@ iframe {
   }
 }
 
+/*
+  PARALLAX
+ */
+
 .beau-gosse {
-  height: 500px;
-  background-image: url("../assets/image/lesbgs.jpg");
   background-size: cover;
-  background-attachment: fixed;
+  background-position: 25%;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-image: url("../assets/image/lesbgs.jpg");
 }
 
-.margin-auto {
-  margin: auto;
-}
+/*
+  GALLERY
+ */
 
-.round-img {
-  height: auto;
-  width: 80%;
-  clip-path: circle(40% at 50%);
-}
-
-.image-galerie {
-  width: 100%;
-  height: auto;
-}
-
-.galerie {
-  background-color: black;
-}
-
-.padding-20 {
-  padding: 20px;
-}
 .gallery {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
+  -webkit-column-count: 1;
+  -moz-column-count: 1;
+  column-count: 1;
 }
-.gallery .pics {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease;
-}
-.gallery .pics:hover img {
-  z-index: 10;
-}
-.form{
-  padding: 20px 0;
-  width: 50%;
+
+/*
+  FORM
+ */
+
+.form {
   margin: auto;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  row-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 90%;
 }
+
 .form label {
   color: white;
 }
 
-.form > * {
-  padding: 10px 0;
-}
-
-@media (max-width: 450px) {
+@media (min-width: 450px) {
   .gallery {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
   }
 }
 
-@media (max-width: 400px) {
-  .btn.filter {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-  }
-}
-
-
-@media screen and (max-width: 450px) {
-  video {
-    margin-bottom: 20px;
-  }
-  .img-accueil {
-    width: 100%;
-  }
-
-  .beau-gosse {
-    background-size: cover;
-    background-position: 25%;
-    height: 200px;
-    background-repeat: no-repeat;
-  }
-  .image-oneArticle {
+@media screen and (min-width: 800px) {
+  .form{
+    padding: 20px 0;
     width: 50%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 20px;
+  }
+  .beau-gosse {
+    height: 500px;
+    background-attachment: fixed;
+    background-position: 0;
   }
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
-    width: 90%;
+  .image-oneArticle {
+    width: 30%;
   }
 
-  .form input, .form textarea {
-    width: 100%;
+  .drapeau {
+    width: 80%;
+  }
+
+  .nom-pays {
+    text-align: center;
   }
 }
