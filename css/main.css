@@ -184,12 +184,17 @@ iframe {
 }
 
 /*
+  MAPS
  */
 
 .maps {
   overflow:hidden;
   clip-path: polygon(0 11%, 100% 11%, 100% 100%, 0% 100%);
 }
+
+/*
+  TRAIT
+ */
 
 .trait, .trait-10 {
   height:1px;
@@ -253,9 +258,16 @@ iframe {
  */
 
 .gallery {
-  -webkit-column-count: 1;
-  -moz-column-count: 1;
   column-count: 1;
+}
+
+.gallery .img-fluid {
+  width: 100%;
+}
+
+.gallery .image-galerie {
+  width: 100%;
+  padding: 10px;
 }
 
 /*
@@ -264,11 +276,8 @@ iframe {
 
 @media screen and (min-width: 800px) {
   .gallery {
-    -webkit-column-count: 3;
-    -moz-column-count: 3;
     column-count: 3;
   }
-
   .beau-gosse {
     height: 500px;
     background-attachment: fixed;
