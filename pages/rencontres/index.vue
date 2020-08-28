@@ -5,8 +5,8 @@
   <div class="container part">
     <h1>Nos rencontres</h1>
     <div class="trait"></div>
-    <div class="hover-effect padding-10 margin-10" v-for="rencontre in filteredList" >
-      <div data-aos="zoom-up" data-aos-duration="1000" class=" d-lg-flex flex-row align-items-center justify-content-around">
+    <div class="hover-effect padding-10 margin-10" v-for="rencontre in filteredList" v-bind:key="rencontre.id">
+      <div data-aos="zoom-up" data-aos-duration="500" class=" d-lg-flex flex-row align-items-center justify-content-around">
         <div class="col-xl-3">
           <img class="w-100" :src="rencontre.photo.url" alt="">
         </div>

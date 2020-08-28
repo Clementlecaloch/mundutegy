@@ -8,7 +8,7 @@
 
     <div class="part">
       <div class="row align-items-center">
-        <video controls autoplay class="col-xl">
+        <video controls class="col-xl">
           <source src="~/assets/video/accueil.mp4" type="video/mp4">
         </video>
         <div class="col-xl presentation-accueil">
@@ -43,7 +43,7 @@
     <div class="part">
       <h1 class="text-center">Explorer</h1>
       <div class="row">
-        <div class="col-sm icon-nav " data-aos="flip-up" data-aos-duration="1000" data-aos-delay="0">
+        <div class="col-sm icon-nav " data-aos="flip-up" data-aos-duration="500">
           <router-link to="/pays">
             <div class="flex-column text-center align-items-center justify-content-center hover-effect">
               <img class="icon padding-10 " src="~/assets/image/icon-boussole.png" alt="">
@@ -54,7 +54,7 @@
             </div>
           </router-link>
         </div>
-        <div class="col-sm icon-nav" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
+        <div class="col-sm icon-nav" data-aos="flip-up" data-aos-duration="5000" data-aos-delay="100">
           <router-link to="/rencontres">
             <div class="flex-column text-center align-items-center justify-content-center hover-effect">
               <img class="icon padding-10" src="~/assets/image/icon-hand.png" alt="">
@@ -63,7 +63,7 @@
             </div>
           </router-link>
         </div>
-        <div class="col-sm icon-nav" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+        <div class="col-sm icon-nav" data-aos="flip-up" data-aos-duration="500" data-aos-delay="200">
           <router-link to="/recettes">
             <div class="flex-column text-center align-items-center justify-content-center hover-effect">
               <img class="icon padding-10" src="~/assets/image/icon-bowl.png" alt="">
@@ -74,7 +74,7 @@
             </div>
           </router-link>
         </div>
-        <div class="col-sm icon-nav" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+        <div class="col-sm icon-nav" data-aos="flip-up" data-aos-duration="500" data-aos-delay="300">
           <router-link to="/livres">
             <div class="flex-column text-center align-items-center justify-content-center hover-effect">
               <img class="icon padding-10" src="~/assets/image/icon-book.png" alt="">
@@ -85,7 +85,7 @@
             </div>
           </router-link>
         </div>
-        <div class="col-sm icon-nav" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
+        <div class="col-sm icon-nav" data-aos="flip-up" data-aos-duration="500" data-aos-delay="400">
           <router-link to="/inspiration">
             <div class="flex-column text-center align-items-center justify-content-center hover-effect">
               <img class="icon padding-10" src="~/assets/image/icon-eye.png" alt="">
@@ -109,7 +109,7 @@
       <h1 class="text-center">Découvrir</h1>
       <div class="flex-column">
         <div v-for="article in filteredList" v-bind:key="article.id" class="hover-effect padding-10">
-          <div class="row justify-content-lg-start align-items-center" data-aos="zoom-up" data-aos-duration="1000">
+          <div class="row justify-content-lg-start align-items-center" data-aos="zoom-up" data-aos-duration="500">
             <div class="col-lg-3 overflow-hidden">
               <img class="w-100" :src="article.imagePresentation.url">
             </div>

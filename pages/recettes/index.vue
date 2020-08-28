@@ -4,8 +4,8 @@
 
   <div class="container part">
     <h1>Les recettes du périple</h1>
-    <div class="hover-effect padding-10 margin-10" v-for="recettes in filteredList" >
-      <div class=" d-lg-flex flex-row align-items-center justify-content-around" data-aos="zoom-up" data-aos-duration="1000">
+    <div class="hover-effect padding-10 margin-10" v-for="recettes in filteredList" v-bind:key="recettes.id">
+      <div class=" d-lg-flex flex-row align-items-center justify-content-around" data-aos="zoom-up" data-aos-duration="500">
         <div class="col-xl-3">
           <img class="w-100" :src="recettes.photo.url" alt="">
         </div>

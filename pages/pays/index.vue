@@ -17,7 +17,7 @@
 
           <!-- LISTES PAYS -->
 
-          <div class="align-items-baseline" data-aos="zoom-up" data-aos-duration="1000">
+          <div class="align-items-baseline" data-aos="zoom-up" data-aos-duration="500">
               <div class="row align-items-center margin-b-10" v-for="pays in continent.pays" v-bind:key="continent.pays.id">
                 <div class="col-lg-3">
                   <img class="drapeau" :src="pays.drapeau.url" alt="">

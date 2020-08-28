@@ -27,7 +27,7 @@
       <!-- HEADER TITLE BACKGROUND -->
 
       <div class="carte">
-        <div class="container" data-aos="zoom-up" data-aos-duration="2000">
+        <div class="container" data-aos="zoom-up" data-aos-duration="500">
           <h1>NAT & GIL - GLOBE CROQUEURS<br> MUNDUTEGY</h1>
           <legend>700 jours</legend>
         </div>

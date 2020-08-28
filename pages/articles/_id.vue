@@ -17,13 +17,13 @@
         <h3>{{article.pays.Nom}}</h3>
         <h4>{{moment(article.dateDePublication).format("L")}}</h4>
       </div>
-      <section class="text-justify text-format" v-html="$md.render(article.contenu)"></section>
+      <section class="text-justify text-format article-content" v-html="$md.render(article.contenu)"></section>
 
       <!-- PHOTOS -->
 
       <div v-if="article.galerie" class="gallery" id="gallery">
         <div class="animation" v-for="image in article.galerie.photos">
-          <a data-aos="zoom-up" data-aos-duration="1000" class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="image.url" alt=""></a>
+          <a data-aos="zoom-up" data-aos-duration="500" class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="image.url" alt=""></a>
         </div>
       </div>
     </div>
@@ -50,7 +50,27 @@
           return { id: this.$route.params.id }
         }
       }
-    }
+    },
+    mounted() {
+        this.method1();
+    },
+    methods:{
+        method1: function() {
+          var article = document.getElementsByClassName('article-content')[0];
+          
+          var childrens = article.children;
+          for (let index = 0; index < childrens.length; index++) {
+            if(childrens[index].children[0]) {
+              if(!childrens[index + 1] || !childrens[index + 1].children[0]) {
+                var clearfix = document.createElement('div')
+                clearfix.classList.add('clearfix')
+                article.insertBefore(clearfix,childrens[index+1])
+              } 
+            }
+          }
+        }
+     },
+
   }
 </script>
 

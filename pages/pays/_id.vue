@@ -14,7 +14,7 @@
     <h1 v-if="pay.galerie" class="margin-10">Les photos</h1>
     <div v-if="pay.galerie" class="gallery" id="gallery">
       <div class="mb-3 pics" v-for="image in pay.galerie.photos">
-        <a data-aos="zoom-up" data-aos-duration="500" class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="w-100" :src="image.url" alt=""></a>
+        <a class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="w-100" :src="image.url" alt=""></a>
       </div>
     </div>
 
@@ -24,7 +24,7 @@
     <h1 v-if="pay.recettes" class="text-center margin-10">Recettes</h1>
     <div v-if="pay.recettes" class="text-format row justify-content-around">
       <div class="col-lg-4 text-center hover-effect padding-20" v-for="recette in pay.recettes" >
-        <div data-aos="zoom-up" data-aos-duration="1000">
+        <div>
           <img class="round-img" :src="recette.photo.url" alt="">
           <h3>{{recette.titre}}</h3>
           <section class="text-justify preview text-format" v-html="$md.render(recette.recette)"></section>
@@ -40,7 +40,7 @@
     <h1 v-if="pay.rencontres" class="text-center margin-10">Rencontres</h1>
     <div v-if="pay.rencontres" class="text-format row justify-content-around">
       <div class="col-lg-4 hover-effect padding-20" v-for="rencontre in pay.rencontres" >
-        <div class="text-center" data-aos="zoom-up" data-aos-duration="1000">
+        <div class="text-center">
           <img class="round-img" :src="rencontre.photo.url" alt="">
           <h3>{{rencontre.nom}}</h3>
           <section class="text-justify preview text-format" v-html="$md.render(rencontre.texte)"></section>
@@ -55,9 +55,9 @@
 
     <h1 class="text-center margin-10">Articles</h1>
     <div class="rencontre" v-for="article in pay.articles" >
-      <div class="d-lg-flex flex-row align-items-center justify-content-around" data-aos="zoom-up" data-aos-duration="1000">
+      <div class="d-lg-flex flex-row align-items-center justify-content-around">
         <div class="col-xl-3">
-          <img :src="article.imagePresentation.url" alt="">
+          <img :src="article.imagePresentation.url" alt="" class="size-auto">
         </div>
         <div class="col-xl-6 flex-column">
           <div class="margin-10">

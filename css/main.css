@@ -43,6 +43,9 @@ p, .text-format {
   height:144px;
 }
 
+img {
+  width: 100%;
+}
 
 /*
   02: MARGIN & PADDING
@@ -109,10 +112,6 @@ video {
   03: IMAGES & ELEMENTS SIZE
  */
 
-.image-oneArticle {
-  height: auto;
-  width: 50%;
-}
 
 .icon {
   height: 80px;
@@ -270,6 +269,10 @@ iframe {
   padding: 10px;
 }
 
+.size-auto {
+  width: 100%;
+}
+
 /*
   DESKTOP VERSION
  */
@@ -294,5 +297,16 @@ iframe {
 
   .nom-pays {
     text-align: center;
+  }
+
+  .float-right {
+    float: right;
+    width: 40%;
+  }
+
+  .article-content p img {
+    float: left; 
+    width: 30%;
+    margin: 10px 3% 10px 0;
   }
 }

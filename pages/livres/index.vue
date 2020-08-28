@@ -4,8 +4,8 @@
 
   <div class="container part">
     <h1>Nos livres</h1>
-    <div class="hover-effect margin-10 padding-10" v-for="livres in filteredList" v-bind="livres.id" >
-      <div class=" d-lg-flex flex-row align-items-center justify-content-around" data-aos="zoom-up" data-aos-duration="1000" >
+    <div class="hover-effect margin-10 padding-10" v-for="livres in filteredList" v-bind:key="livres.id" >
+      <div class=" d-lg-flex flex-row align-items-center justify-content-around" data-aos="zoom-up" data-aos-duration="500">
         <div class="col-xl-3">
           <img class="w-100" :src="livres.couverture.url" alt="">
         </div>
