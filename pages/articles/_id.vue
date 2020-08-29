@@ -23,7 +23,7 @@
 
       <div v-if="article.galerie" class="gallery" id="gallery">
         <div class="animation" v-for="image in article.galerie.photos">
-          <a data-aos="zoom-up" data-aos-duration="500" class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="image.url" alt=""></a>
+          <a class="img-fluid" :href="image.url" data-lightbox="galerie"><img class="image-galerie" :src="image.url" alt=""></a>
         </div>
       </div>
     </div>

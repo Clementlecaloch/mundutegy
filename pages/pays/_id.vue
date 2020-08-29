@@ -55,7 +55,7 @@
 
     <h1 class="text-center margin-10">Articles</h1>
     <div class="rencontre" v-for="article in pay.articles" >
-      <div class="d-lg-flex flex-row align-items-center justify-content-around">
+      <div class="d-lg-flex flex-row align-items-center justify-content-around hover-effect padding-10">
         <div class="col-xl-3">
           <img :src="article.imagePresentation.url" alt="" class="size-auto">
         </div>

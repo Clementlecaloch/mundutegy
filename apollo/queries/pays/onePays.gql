@@ -3,7 +3,7 @@ query onePays($id: ID!) {
      id
      Nom
      carte
-     articles {
+     articles (sort: "dateDePublication:desc") {
        id
        titre
        dateDePublication
